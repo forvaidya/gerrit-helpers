@@ -8,3 +8,5 @@ MY_GIT_DIR=$(git rev-parse --git-dir)
 scp -p -P 29418 server.example.com:hooks/commit-msg ${MY_GIT_DIR}/hooks/.
 git checkout -f ${TOPIC_BRANCH}
 git config --add  branch.${TOPIC_BRANCH}.gerrit refs/for/$2
+git config core.editor vim
+

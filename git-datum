@@ -1,0 +1,18 @@
+#/bin/bash
+CURR_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
+CURR_DEST=$( git config  --get branch.${CURR_BRANCH}.gerrit)
+CURR_DEST_BRANCH=$(basename ${CURR_DEST})
+git fetch 
+
+echo 
+echo "YOUR NEW COMMITS..."
+echo 
+
+git log origin/${CURR_DEST_BRANCH}..HEAD
+
+echo 
+echo "MISSING COMMITS ...git syncup needed"
+echo 
+
+git log HEAD..origin/${CURR_DEST_BRANCH}
+

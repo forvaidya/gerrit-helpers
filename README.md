@@ -5,7 +5,7 @@ replace **server.example.com** with your gerrit SSH URL in file git-review
 
 Copy both files to some location like <pre>~/bin and give +x permission and adjust PATH variable</pre>
 
-##Usage
+## Usage
 
 ### Create a topic branch
 

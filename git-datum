@@ -1,7 +1,7 @@
 #/bin/bash
 CURR_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
 CURR_DEST=$( git config  --get branch.${CURR_BRANCH}.gerrit)
-CURR_BRANCH=$(basename ${CURR_DEST})
+CURR_DEST_BRANCH=$(basename ${CURR_DEST})
 git fetch 
 
-git log origin/${CURR_BRANCH}...HEAD
+git log origin/${CURR_DEST_BRANCH}...HEAD

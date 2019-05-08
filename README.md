@@ -20,6 +20,11 @@ Word **topic** will be prefixed automatically
 This will post code review to Gerrit
 
 
+### Find out how many commits ahead/behind of current topic branch 
+**git datum**
+This will show the commits done in the topic branch
+
+
 ### You can delete topic branch using commnad <pre> git branch -D branch_name </pre>
 
 

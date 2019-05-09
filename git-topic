@@ -5,7 +5,7 @@ git fetch
 git stash save saved_${DATE_STRING}
 git branch ${TOPIC_BRANCH} origin/$2 
 MY_GIT_DIR=$(git rev-parse --git-dir)
-scp -p -P 29418 server.example.com:hooks/commit-msg ${MY_GIT_DIR}/hooks/.
+scp -p -P 29418 muc-gerrit.rd.advaoptical.com:hooks/commit-msg ${MY_GIT_DIR}/hooks/.
 git checkout -f ${TOPIC_BRANCH}
 git config --add  branch.${TOPIC_BRANCH}.gerrit refs/for/$2
 git config core.editor vim

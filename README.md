@@ -1,7 +1,7 @@
 # gerrit-helpers
 A helper functions to create topic branch and post review to Gerrit
 
-replace **server.example.com** with your gerrit SSH URL in file git-review
+Files must be stored in some folder and that folder must be in PATH and should have <pre>a+rx</pre> permissions
 
 Copy both files to some location like <pre>~/bin and give +x permission and adjust PATH variable</pre>
 

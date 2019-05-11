@@ -5,10 +5,10 @@ Files must be stored in some folder and that folder must be in PATH and should h
 
 Copy both files to some location like <pre>~/bin and give +x permission and adjust PATH variable</pre>
 
-## Usage
+## Installation
 ### Clone this project
-### bash install.sh 
-### . ~/.bashrc or make a new shell 
+### <code>bash install.sh</code>
+### <code>. ~/.bashrc</code> or make a new shell 
 ### Do not remove this git clone !! 
 
 ## Usage

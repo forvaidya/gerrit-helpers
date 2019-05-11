@@ -12,7 +12,9 @@ Install toolset <code>bash install.sh</code> ; note it updates your ~/.bashrc an
  
 
 ### Getting tool updates
-Run <code>bash install.sh</code> periodically to get updates (from your git clone). This command is idempotent, you can run it any number of times.
+Run <code>bash install.sh</code> periodically to get updates (from your git clone).
+
+This command is idempotent, you can run it any number of times.
 
 
 ## Usage
@@ -20,18 +22,22 @@ Run <code>bash install.sh</code> periodically to get updates (from your git clon
 ### Create a topic branch
 
 <code>git topic mahesh master</code>
+
 This will create a private branch <code>private_work/topic_mahesh</code>
+
 Word **topic** will be prefixed automatically 
 
 
 
 ### Post review to Gerrit
 <code>git review</code>
+
 This will post code review to Gerrit
 
 
 ### Find out how many commits ahead/behind of current topic branch 
 <code>git datum</code>
+
 This will show the commits done in the topic branch
 
 

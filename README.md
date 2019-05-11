@@ -1,9 +1,7 @@
 # gerrit-helpers
 A helper functions to create topic branch and post review to Gerrit
 
-Files must be stored in some folder and that folder must be in PATH and should have <code>a+rx</code> permissions
 
-Copy both files to some location like <pre>~/bin and give +x permission and adjust PATH variable</pre>
 
 ## Installation
 ### Clone this project

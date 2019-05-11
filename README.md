@@ -1,6 +1,7 @@
 # gerrit-helpers
-A helper functions to create topic branch and post review to Gerrit
+A helper functions to create topic branch and post review to Gerrit.
 
+**This is tested on Windows, Git-Bash, ubuntu 16+ and Centos 7+**
 
 
 ## Installation

@@ -15,4 +15,5 @@ then
 fi 
 EOF
 
+sed -i '/.gerrit_helper_rc/d' ~/.bashrc
 echo  ". ~/.gerrit_helper_rc"  >> ~/.bashrc 

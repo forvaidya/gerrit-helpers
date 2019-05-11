@@ -9,6 +9,10 @@ A helper functions to create topic branch and post review to Gerrit
 ### <code>. ~/.bashrc</code> or make a new shell 
 ### Do not remove this git clone !! 
 
+## Getting updates
+### Run <code>bash install.sh</code> periodically to get updates. This command idempotent
+
+
 ## Usage
 
 ### Create a topic branch

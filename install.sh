@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CURR_PATH=$(dirname $(readlink -f $0))
+(cd ${CURR_PATH} && git pull --rebase) 
 #FINAL_PATH=${CURR_PATH}:${PATH}
 #FINAL_PATH=$(printf %s "$FINAL_PATH" | awk -v RS=: -v ORS=: '!arr[$0]++')
 

@@ -4,32 +4,32 @@ A helper functions to create topic branch and post review to Gerrit
 
 
 ## Installation
-### Clone this project <code>git clone https://github.com/forvaidya/gerrit-helpers.git</code>
-### Install toolset <code>bash install.sh</code> ; note it updates your ~/.bashrc and creates a file  ~/.gerrit_helper_rc
-### <code>. ~/.bashrc</code> or make a new shell 
-### Do not remove this git clone !! 
+Clone this project <code>git clone https://github.com/forvaidya/gerrit-helpers.git</code>
+Install toolset <code>bash install.sh</code> ; note it updates your ~/.bashrc and creates a file  ~/.gerrit_helper_rc
+<code>. ~/.bashrc</code> or make a new shell 
+ 
 
-## Getting updates
-### Run <code>bash install.sh</code> periodically to get updates. This command idempotent
+### Getting tool updates
+#### Run <code>bash install.sh</code> periodically to get updates. This command idempotent
 
 
 ## Usage
 
 ### Create a topic branch
 
-**<code>git topic mahesh master</code>**
+<code>git topic mahesh master</code>
 This will create a private branch <code>private_work/topic_mahesh</code>
 Word **topic** will be prefixed automatically 
 
 
 
 ### Post review to Gerrit
-**<code>git review</code>**
+<code>git review</code>
 This will post code review to Gerrit
 
 
 ### Find out how many commits ahead/behind of current topic branch 
-**<code>git datum</code>**
+<code>git datum</code>
 This will show the commits done in the topic branch
 
 

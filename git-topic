@@ -2,7 +2,7 @@
 DATE_STRING=$(date +%Y%m%d.%H%M%S)
 TOPIC_BRANCH=private_work/topic_$1
 git fetch 
-git stash save saved_${DATE_STRING}
+git stash save Before_${TOPIC_BRANCH}_${DATE_STRING}
 git branch --no-track ${TOPIC_BRANCH} origin/$2 
 MY_GIT_DIR=$(git rev-parse --git-dir)
 scp -p -P 29418 muc-gerrit.rd.advaoptical.com:hooks/commit-msg ${MY_GIT_DIR}/hooks/.

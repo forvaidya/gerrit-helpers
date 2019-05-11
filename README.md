@@ -4,8 +4,8 @@ A helper functions to create topic branch and post review to Gerrit
 
 
 ## Installation
-### Clone this project
-### <code>bash install.sh</code>
+### Clone this project <code>git clone https://github.com/forvaidya/gerrit-helpers.git</code>
+### Install toolset <code>bash install.sh</code> ; note it updates your ~/.bashrc and creates a file  ~/.gerrit_helper_rc
 ### <code>. ~/.bashrc</code> or make a new shell 
 ### Do not remove this git clone !! 
 

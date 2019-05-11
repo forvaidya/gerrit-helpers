@@ -42,7 +42,7 @@ This will show the commits done in the topic branch
 
 
 ### You can delete topic branch using command
-<pre>git branch -D branch_name</pre>
+<code>git branch -D branch_name</code>
 
 
 

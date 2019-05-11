@@ -15,19 +15,19 @@ Copy both files to some location like <pre>~/bin and give +x permission and adju
 
 ### Create a topic branch
 
-**git topic mahesh master**
+**<code>git topic mahesh master</code>**
 This will create a private branch <code>private_work/topic_mahesh</code>
 Word **topic** will be prefixed automatically 
 
 
 
 ### Post review to Gerrit
-**git review**
+**<code>git review</code>**
 This will post code review to Gerrit
 
 
 ### Find out how many commits ahead/behind of current topic branch 
-**git datum**
+**<code>git datum</code>**
 This will show the commits done in the topic branch
 
 

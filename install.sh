@@ -10,7 +10,7 @@ if [[ -z \$GERRIT_HELPERS_INSTALLED ]]
 then 
       echo "Helpers installing now.."
       PATH=${CURR_PATH}:\${PATH}
-      chmod -v :w
+      chmod -v a+rx ./git-*
       chmod a+rx git-*
       export GERRIT_HELPERS_INSTALLED=true
       echo "Helpers installation completed.."

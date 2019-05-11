@@ -47,7 +47,7 @@ This will show the commits done in the topic branch
 <code>git branch -D branch_name</code>
 
 
-## [License](License.md)
+## [License](LICENSE.md)
 
 
 

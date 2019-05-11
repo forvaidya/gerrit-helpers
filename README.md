@@ -5,12 +5,14 @@ A helper functions to create topic branch and post review to Gerrit
 
 ## Installation
 Clone this project <code>git clone https://github.com/forvaidya/gerrit-helpers.git</code>
+
 Install toolset <code>bash install.sh</code> ; note it updates your ~/.bashrc and creates a file  ~/.gerrit_helper_rc
+
 <code>. ~/.bashrc</code> or make a new shell 
  
 
 ### Getting tool updates
-#### Run <code>bash install.sh</code> periodically to get updates. This command idempotent
+Run <code>bash install.sh</code> periodically to get updates. This command is idempotent
 
 
 ## Usage

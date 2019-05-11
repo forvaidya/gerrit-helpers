@@ -12,7 +12,7 @@ Install toolset <code>bash install.sh</code> ; note it updates your ~/.bashrc an
  
 
 ### Getting tool updates
-Run <code>bash install.sh</code> periodically to get updates. This command is idempotent
+Run <code>bash install.sh</code> periodically to get updates (from your git clone). This command is idempotent, you can run it any number of times.
 
 
 ## Usage

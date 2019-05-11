@@ -10,7 +10,7 @@ if [[ -z \$GERRIT_HELPERS_INSTALLED ]]
 then 
      
       PATH=${CURR_PATH}:\${PATH}
-      chmod  a+rx ./git-*
+      chmod  a+rx ${CURR_PATH}/git-*
       export GERRIT_HELPERS_INSTALLED=true
       :
 fi 

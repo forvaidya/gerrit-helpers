@@ -1,7 +1,14 @@
 #!/bin/bash
 
-CURR_PATH=$(dirname $(readlink -f $0))
-(cd ${CURR_PATH} && git pull --rebase) 
+#--- readlink doesn't exist on macOS; so function is needed 
+
+function readlink() {
+  DIR="${1%/*}"
+  (cd "$DIR" && echo "$(pwd -P)")
+}
+
+CURR_PATH=$(readlink $(dirname  $0))
+#(cd ${CURR_PATH} && git pull --rebase) 
 #FINAL_PATH=${CURR_PATH}:${PATH}
 #FINAL_PATH=$(printf %s "$FINAL_PATH" | awk -v RS=: -v ORS=: '!arr[$0]++')
 
@@ -17,7 +24,7 @@ then
 fi 
 EOF
 
-sed -i '/.gerrit_helper_rc/d' ~/.bashrc
+sed -i '' '/.gerrit_helper_rc/d' ~/.bashrc
 echo  ". ~/.gerrit_helper_rc"  >> ~/.bashrc 
 . ~/.bashrc 
 

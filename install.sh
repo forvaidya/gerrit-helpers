@@ -12,6 +12,7 @@ then
      
       PATH=${CURR_PATH}:\${PATH}
       chmod  a+rx ${CURR_PATH}/git-*
+      export EDITOR=/usr/bin/vi
       export GERRIT_HELPERS_INSTALLED=true
       :
 fi 

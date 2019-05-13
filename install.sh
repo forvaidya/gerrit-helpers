@@ -1,7 +1,8 @@
 #!/bin/bash
 
 CURR_PATH=$(dirname $(readlink -f $0))
-(cd ${CURR_PATH} && git pull --rebase) 
+
+unset GERRIT_HELPERS_INSTALLED
 #FINAL_PATH=${CURR_PATH}:${PATH}
 #FINAL_PATH=$(printf %s "$FINAL_PATH" | awk -v RS=: -v ORS=: '!arr[$0]++')
 
@@ -17,7 +18,7 @@ then
       :
 fi 
 EOF
-
+(cd ${CURR_PATH} && git pull --rebase) 
 sed -i '/.gerrit_helper_rc/d' ~/.bashrc
 echo  ". ~/.gerrit_helper_rc"  >> ~/.bashrc 
 . ~/.bashrc 

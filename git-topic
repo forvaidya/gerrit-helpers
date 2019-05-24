@@ -1,4 +1,16 @@
 #/bin/bash
+set -eE
+
+trap  "echo Usage:  $0 task_name destination_branch" ERR
+
+
+
+if [[ $# != 2 ]]
+then
+    false
+fi 
+
+
 DATE_STRING=$(date +%Y%m%d.%H%M%S)
 TOPIC_BRANCH=private_work/topic_$1
 git fetch 

@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 CURR_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
 CURR_DEST=$( git config  --get branch.${CURR_BRANCH}.gerrit)
 

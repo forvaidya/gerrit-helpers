@@ -1,3 +1,3 @@
-[submodule "x_subodule"]
-	path = x_subodule
+[submodule "testx"]
+	path = testx
 	url = ../submodule
